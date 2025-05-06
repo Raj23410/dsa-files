@@ -81,7 +81,7 @@ void EMP_CLASS::Display()
    i=Ind_Records.position*sizeof(Rec);//getting pos from index file
    seqfile.seekg(i,ios::beg);//seeking record of that pos from seq.file
    seqfile.read((char *)&Records,sizeof(Records));//reading record
-   if(Records.emp_  id!=-1)//if rec. is not deleted logically
+   if(Records.emp_id!=-1)//if rec. is not deleted logically
    {   //then display it
    cout<<"\nName: "<<Records.name<<flush;
    cout<<"\nEmp_ID: "<<Records.emp_id;
@@ -199,7 +199,7 @@ void EMP_CLASS::Search()
   cout<<"\n Record is not present in the file";
   return;
   }
-  else //emp_id=desired record’s id
+  else //emp_id=desired recordâ€™s id
   {
   cout<<"\n The Record is present in the file and it is...";
   cout<<"\n Name: "<<Records.name;
